@@ -1,0 +1,430 @@
+/*=====REGOLE GENERALI=====*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.side-left {
+    width: 70%;
+}
+
+main {
+    padding: 0 7%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #ffffff;
+}
+
+.gray-background {
+    display: flex;
+    align-items: center;
+}
+
+.color-gray {
+    color: rgb(185, 181, 181);
+}
+
+header {
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navtop-content {
+    padding: 0px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+}
+
+.nav-img img {
+    height: 117px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 25vw;
+}
+
+.nav-icons button {
+    padding: 7px 25px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    border: solid 0.4px;
+}
+
+.nav-icons button a {
+    text-decoration: none;
+    color: #272727;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+#T-button {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    border: none;
+}
+
+#T-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-gray-icons {
+    font-size: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+/*===========REGOLE DELLE DUE TABS==========*/
+
+.main-tabs {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-tabs ul {
+    display: flex;
+    gap: 50px;
+    padding-left: 0;
+    list-style: none;
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1.5px solid rgb(220, 214, 214);
+}
+
+.main-tabs li {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 16px;
+    padding-bottom: 8px;
+    font-family: 'Inter', sans-serif;
+}
+
+.border-bottom-black {
+    border-bottom: 1px solid black;
+}
+
+/*==========REGOLE DEGLI ARTICOLI==========*/
+
+.source-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.source-info img {
+    border-radius: 5px;
+    height: 26px;
+}
+
+#plus-radius-source {
+    border-radius: 40px;
+}
+
+.source-info span {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 75px;
+    margin-bottom: 60px;
+}
+
+.article-text-container {
+    width: 100%;
+    min-height: 125px;
+}
+
+.article-text-container h2 {
+    font-family: 'Source Serif Pro', Georgia, serif;
+    font-weight: bold;
+    color: #141414;
+    margin-right: 100px;
+}
+
+.article-text-container h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    color: #757575;
+}
+
+.article-info-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.article-info-container button {
+    display: flex;
+    gap: 10px;
+    padding-left: 0;
+    border: none;
+    background-color: transparent;
+    color: #757575;
+    font-size: 15px;
+}
+
+.gray-background span {
+    border-radius: 20px;
+    background-color: #ebe9e9;
+    padding: 6px;
+}
+
+.article-icons {
+    font-size: 22px;
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.article-left-container {
+    width: 70%;
+}
+
+.article-img {
+    width: 30%;
+}
+
+.article-img img {
+    height: 150px;
+    width: 250px;
+    max-width: 100%;
+}
+
+.article-info-container button:not(:first-child)::before {
+    content: "•";
+    margin: 0 8px;
+}
+
+/*==========REGOLE ASIDE==========*/
+
+
+.twit-image-container {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    justify-content: center;
+}
+
+.side-right {
+    margin-left: 60px;
+    margin-top: 15px;
+    border-left: 1.5px solid rgb(220, 214, 214);
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30%;
+    gap: 45px;
+}
+
+.twit-image-container img {
+    height: 45px;
+}
+
+.twit-icon {
+    font-size: 30px;
+    color: #37a1f2;
+}
+
+.plus {
+    font-size: 35px;
+    color: #757575;
+}
+
+.side-right p {
+    font-size: 22px;
+    color: rgb(67 67 67);
+    width: 70%;
+    font-family: 'Inter', sans-serif;
+}
+
+.click-twit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 30px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    border: 1.5px solid #757575;
+}
+
+.click-twit a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.top-side-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1.5px solid rgb(220, 214, 214);
+    padding-bottom: 30px;
+}
+
+#link-decoration-aside {
+    font-family: 'Inter', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.section-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-topics button {
+    border-radius: 30px;
+    padding: 15px 25px;
+    border: none;
+    color: #171717;
+    font-size: 19px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.self-align {
+    align-self: baseline;
+    padding-left: 2%;
+    font-size: x-large;
+    color: #272727;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.author-container img {
+    border-radius: 50px;
+    height: 60px;
+}
+
+#img-bonsu {
+    height: 60px;
+    min-width: 60px;
+    object-fit: cover;
+}
+
+.followers-text {
+    min-width: 90%;
+}
+
+.followers-text h3 {
+    font-family: sans-serif;
+    color: #2b2b2b;
+    margin-bottom: 5px;
+}
+
+.followers-text p {
+    font-size: 15px;
+    margin-top: 0;
+    font-weight: 500;
+    color: #757575;
+}
+
+.button-follower {
+    border-radius: 30px;
+    padding: 13px 25px;
+    color: #171717;
+    font-size: 19px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    border: 1px solid;
+}
+
+.author-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.photo-and-text {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.bottom-aside h4 {
+    margin-bottom: 40px;
+}
+
+.bottom-aside h2 {
+    font-size: 20px;
+    margin: 20px 4px;
+}
+
+.bottom-aside .article-text-container {
+    min-height: 10%;
+}
+
+.bottom-aside a {
+    text-decoration: none;
+    color: #018404;
+    font-family: sans-serif;
+}
+
+.small-article {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+#foto-teigen {
+    height: 40px;
+    min-width: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+
+.footer-link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: #757575;
+    font-family: sans-serif;
+}
+
+.button-absolute {
+    position: absolute;
+    left: 370px;
+    background-color: grey;
+    border: 1px solid #757575;
+    color: white;
+    top: 31px;
+}
