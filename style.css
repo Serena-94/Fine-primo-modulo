@@ -22,7 +22,7 @@ main {
 }
 
 .color-gray {
-    color: rgb(185, 181, 181);
+    color: rgb(114 114 114);
 }
 
 header {
@@ -37,24 +37,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-
+    height: 60px;
+    background-color: white;
 }
 
 .nav-img img {
-    height: 117px;
+    height: 90px;
 }
 
 .nav-icons {
     display: flex;
-    gap: 35px;
+    gap: 25px;
     justify-content: space-between;
     align-items: center;
-    min-width: 25vw;
+    /*min-width: 20vw;*/
 }
 
 .nav-icons button {
-    padding: 7px 25px;
+    padding: 7px 15px;
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -64,14 +64,14 @@ header {
 .nav-icons button a {
     text-decoration: none;
     color: #272727;
-    font-size: 20px;
+    font-size: 13px;
     font-family: 'Inter', sans-serif;
 }
 
 #T-button {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,9 +85,13 @@ header {
 }
 
 .nav-gray-icons {
-    font-size: 25px;
+    font-size: 18px;
     display: flex;
     gap: 20px;
+}
+
+.nav-gray-icons a{
+    color:#666666;
 }
 
 /*===========REGOLE DELLE DUE TABS==========*/
@@ -100,8 +104,8 @@ header {
     display: flex;
     gap: 50px;
     padding-left: 0;
+    padding-top: 50px;
     list-style: none;
-    height: 80px;
     display: flex;
     align-items: flex-end;
     border-bottom: 1.5px solid rgb(220, 214, 214);
@@ -110,7 +114,7 @@ header {
 .main-tabs li {
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 13px;
     padding-bottom: 8px;
     font-family: 'Inter', sans-serif;
 }
@@ -129,7 +133,7 @@ header {
 
 .source-info img {
     border-radius: 5px;
-    height: 26px;
+    height: 22px;
 }
 
 #plus-radius-source {
@@ -137,56 +141,61 @@ header {
 }
 
 .source-info span {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
 }
 
 section {
-    width: 100%;
     position: relative;
+    width: 100%;
 }
 
 article {
+    
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 75px;
+    gap: 30px;
     margin-bottom: 60px;
+}
+
+.article-left-container{
+    min-width: 70%;
 }
 
 .article-text-container {
     width: 100%;
-    min-height: 125px;
 }
 
 .article-text-container h2 {
     font-family: 'Source Serif Pro', Georgia, serif;
     font-weight: bold;
     color: #141414;
-    margin-right: 100px;
+    font-size: 22px;
 }
 
 .article-text-container h3 {
     font-family: 'Inter', sans-serif;
     font-weight: normal;
     color: #757575;
+    font-size: 16px;
 }
 
 .article-info-container {
     display: flex;
-    width: 100%;
     align-items: center;
+    width: 100%;
 }
 
 .article-info-container button {
     display: flex;
-    gap: 10px;
+    gap: 7px;
     padding-left: 0;
     border: none;
     background-color: transparent;
     color: #757575;
-    font-size: 15px;
+    font-size: small;
 }
 
 .gray-background span {
@@ -196,29 +205,27 @@ article {
 }
 
 .article-icons {
-    font-size: 22px;
+    font-size: 19px;
     display: flex;
     gap: 10px;
     margin-left: auto;
 }
 
-.article-left-container {
-    width: 70%;
-}
-
 .article-img {
-    width: 30%;
+   
+    object-fit: cover;
 }
 
 .article-img img {
-    height: 150px;
-    width: 250px;
-    max-width: 100%;
+    height: 140px;
+    width: 200px;
+    min-width: 100%;
+    
 }
 
 .article-info-container button:not(:first-child)::before {
     content: "•";
-    margin: 0 8px;
+    margin: 0 6px;
 }
 
 /*==========REGOLE ASIDE==========*/
@@ -235,7 +242,7 @@ article {
     margin-left: 60px;
     margin-top: 15px;
     border-left: 1.5px solid rgb(220, 214, 214);
-    padding-left: 60px;
+    padding-left: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,21 +251,21 @@ article {
 }
 
 .twit-image-container img {
-    height: 45px;
+    height: 40px;
 }
 
 .twit-icon {
-    font-size: 30px;
+    font-size: 22px;
     color: #37a1f2;
 }
 
 .plus {
-    font-size: 35px;
+    font-size: 30px;
     color: #757575;
 }
 
 .side-right p {
-    font-size: 22px;
+    font-size: 16px;
     color: rgb(67 67 67);
     width: 70%;
     font-family: 'Inter', sans-serif;
@@ -268,7 +275,7 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 30px;
+    padding: 5px 20px;
     margin-bottom: 30px;
     border-radius: 30px;
     border: 1.5px solid #757575;
@@ -278,7 +285,7 @@ article {
     text-decoration: none;
     color: black;
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
 }
 
@@ -294,7 +301,7 @@ article {
 
 #link-decoration-aside {
     font-family: 'Inter', sans-serif;
-    font-size: medium;
+    font-size: small;
     font-weight: 500;
 }
 
@@ -306,31 +313,30 @@ article {
 
 .section-topics button {
     border-radius: 30px;
-    padding: 15px 25px;
+    padding: 13px 15px;
     border: none;
     color: #171717;
-    font-size: 19px;
+    font-size: 17px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
 }
 
 .self-align {
     align-self: baseline;
-    padding-left: 2%;
-    font-size: x-large;
+    font-size: medium;
+    width: 350px;
     color: #272727;
     font-family: sans-serif;
-    margin: 0;
 }
 
 .author-container img {
     border-radius: 50px;
-    height: 60px;
+    height: 45px;
 }
 
 #img-bonsu {
-    height: 60px;
-    min-width: 60px;
+    height: 45px;
+    min-width: 45px;
     object-fit: cover;
 }
 
@@ -342,20 +348,20 @@ article {
     font-family: sans-serif;
     color: #2b2b2b;
     margin-bottom: 5px;
+    font-size: small;
 }
 
 .followers-text p {
-    font-size: 15px;
-    margin-top: 0;
+    font-size: 10px;
     font-weight: 500;
     color: #757575;
 }
 
 .button-follower {
     border-radius: 30px;
-    padding: 13px 25px;
+    padding: 8px 16px;
     color: #171717;
-    font-size: 19px;
+    font-size: 12px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     border: 1px solid;
@@ -375,16 +381,12 @@ article {
 }
 
 .bottom-aside h4 {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 .bottom-aside h2 {
-    font-size: 20px;
-    margin: 20px 4px;
-}
-
-.bottom-aside .article-text-container {
-    min-height: 10%;
+    font-size: 14px;
+    margin: 5px 2px;
 }
 
 .bottom-aside a {
@@ -396,12 +398,12 @@ article {
 .small-article {
     display: flex;
     flex-direction: column;
-    gap: 5px
+    gap: 4px
 }
 
 #foto-teigen {
-    height: 40px;
-    min-width: 40px;
+    height: 30px;
+    min-width: 30px;
     object-fit: cover;
     border-radius: 50px;
 }
@@ -411,13 +413,14 @@ article {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding-top: 50px;
+    margin-top: 40px;
 }
 
 .footer-link a {
     text-decoration: none;
     color: #757575;
     font-family: sans-serif;
+    font-size: small;
 }
 
 .button-absolute {
@@ -426,5 +429,5 @@ article {
     background-color: grey;
     border: 1px solid #757575;
     color: white;
-    top: 31px;
+    top: 25px;
 }
