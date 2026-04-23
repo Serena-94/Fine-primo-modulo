@@ -90,8 +90,8 @@ header {
     gap: 20px;
 }
 
-.nav-gray-icons a{
-    color:#666666;
+.nav-gray-icons a {
+    color: #666666;
 }
 
 /*===========REGOLE DELLE DUE TABS==========*/
@@ -148,20 +148,21 @@ header {
 
 section {
     position: relative;
-    width: 100%;
+    width: 45vw;
 }
 
 article {
-    
+
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    width: 70%;
     gap: 30px;
     margin-bottom: 60px;
 }
 
-.article-left-container{
-    min-width: 70%;
+.article-left-container {
+    min-width: 100%;
 }
 
 .article-text-container {
@@ -212,15 +213,16 @@ article {
 }
 
 .article-img {
-   
+    width: 174px;
     object-fit: cover;
 }
 
 .article-img img {
     height: 140px;
-    width: 200px;
+    width: 174px;
     min-width: 100%;
-    
+
+
 }
 
 .article-info-container button:not(:first-child)::before {
@@ -246,7 +248,7 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 30%;
+    max-width: 30vw;
     gap: 45px;
 }
 
@@ -309,6 +311,7 @@ article {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    width: 100%;
 }
 
 .section-topics button {
@@ -327,6 +330,10 @@ article {
     width: 350px;
     color: #272727;
     font-family: sans-serif;
+}
+
+.section-followers {
+    width: 100%
 }
 
 .author-container img {
@@ -378,6 +385,10 @@ article {
     display: flex;
     align-items: center;
     gap: 30px;
+}
+
+.bottom-aside {
+    width: 100%;
 }
 
 .bottom-aside h4 {
